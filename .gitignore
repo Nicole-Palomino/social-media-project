@@ -1,4 +1,4 @@
-# Logs
+# Logs y archivos de depuración
 logs
 *.log
 npm-debug.log*
@@ -7,18 +7,54 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencias
 node_modules
+.pnpm-store/
+
+# Archivos de construcción
 dist
 dist-ssr
+coverage
 *.local
 
-# Editor directories and files
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba
+/cypress/videos/
+/cypress/screenshots/
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+
+# Archivos de entorno
+.env
+.env.*
+!.env.example
+
+# Editor y IDE
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos de caché y temporales
+*.tsbuildinfo
+.temp
+.cache
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+
+# Archivos de dependencias específicos de Vue
+.nuxt
+.nitro
+.output
+.vercel

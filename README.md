@@ -1,85 +1,68 @@
-# Social Media Hub
+# Social Media Hub 🌐
 
-## 📱 Descripción
-Social Media Hub es una página web personal que funciona como un centro de enlaces sociales y profesionales, diseñada para centralizar y compartir fácilmente todos tus perfiles y recursos en línea. El proyecto está inspirado en plataformas como Linktree, pero con características personalizadas y un diseño moderno.
+Un centro de control unificado para gestionar perfiles de redes sociales, construido con Vue.js. Esta aplicación te permite visualizar y gestionar múltiples perfiles de redes sociales en una interfaz moderna y fácil de usar.
 
-## ✨ Características Principales
+## 🚀 Características
 
-- **Perfil Personalizado**: Muestra tu foto de perfil, nombre de usuario y título profesional.
-- **Enlaces Destacados**: Sección para tus enlaces más importantes (portafolio, blog, CV, etc.).
-- **Selector de Temas**: 5 temas de color diferentes para personalizar la apariencia:
-  - Rosa (predeterminado)
-  - Azul
-  - Verde
-  - Naranja
-  - Oscuro
-- **Iconos SVG**: Uso de iconos vectoriales para una apariencia nítida en cualquier resolución.
-- **Diseño Responsivo**: Adaptable a cualquier dispositivo y tamaño de pantalla.
-- **Persistencia de Tema**: El tema seleccionado se guarda en cookies para mantener la preferencia del usuario.
+- Visualización de perfiles de redes sociales
+- Interfaz de usuario moderna y responsiva
+- Diseño minimalista y elegante
+- Integración con FontAwesome para iconos
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **PHP**: Para la lógica del servidor y manejo de datos
-- **HTML5**: Estructura semántica del contenido
-- **CSS3**: Estilos y animaciones
-- **JavaScript**: Interactividad y mejoras en la experiencia de usuario
-- **Google Fonts**: Fuente Poppins para una tipografía moderna
+- [Vue.js 3](https://vuejs.org/) - Framework progresivo de JavaScript
+- [Vite](https://vitejs.dev/) - Build tool y servidor de desarrollo
+- [FontAwesome](https://fontawesome.com/) - Biblioteca de iconos
+- [ESLint](https://eslint.org/) - Herramienta de linting para JavaScript
 
-## 🚀 Instalación
+## 📋 Prerrequisitos
 
-1. Clona este repositorio en tu servidor local:
-```bash
+- Node.js (versión recomendada: 18.x o superior)
+- npm (incluido con Node.js)
+
+## 🔧 Instalación
+
+1. Clona el repositorio:
+```sh
 git clone [URL-del-repositorio]
 ```
 
-2. Asegúrate de tener un servidor web con PHP instalado (como Apache, Nginx, o XAMPP).
-
-3. Coloca el proyecto en el directorio raíz de tu servidor web.
-
-4. Accede al proyecto a través de tu navegador web:
-```
-http://localhost/social-media-project
+2. Instala las dependencias:
+```sh
+npm install
 ```
 
-## 🎨 Personalización
+## 🚀 Scripts Disponibles
 
-Para personalizar el hub con tu información, modifica el array `$userData` en el archivo `index.php`:
-
-```php
-$userData = [
-    'username' => 'tu.usuario',
-    'jobTitle' => 'Tu Título Profesional',
-    'profileImage' => 'URL-de-tu-imagen',
-    'links' => [
-        ['title' => 'Título del Enlace', 'url' => 'URL-del-enlace', 'icon' => 'nombre-del-icono'],
-        // Añade más enlaces según necesites
-    ],
-    'theme' => 'pink' // Tema por defecto
-];
+### Desarrollo
+Inicia el servidor de desarrollo:
+```sh
+npm run dev
 ```
 
-## 📁 Estructura del Proyecto
-
-```
-social-media-project/
-├── css/
-│   └── style.css
-├── img/
-│   └── icono.png
-├── js/
-│   └── main.js
-├── index.php
-└── README.md
+### Producción
+Compila y minifica para producción:
+```sh
+npm run build
 ```
 
-## 🤝 Contribuciones
+### Linting
+Ejecuta el linter para mantener la calidad del código:
+```sh
+npm run lint
+```
 
-Las contribuciones son bienvenidas. Si encuentras un bug o tienes una sugerencia, por favor abre un issue o envía un pull request.
+### Vista previa
+Previsualiza la versión de producción:
+```sh
+npm run preview
+```
 
-## 📄 Licencia
+## 🌐 Despliegue
 
-Este proyecto está bajo la Licencia MIT - mira el archivo LICENSE para más detalles.
+Este proyecto está configurado para ser desplegado en Netlify. El archivo `netlify.toml` ya incluye la configuración necesaria para el despliegue automático.
 
-## 👩‍💻 Autor
+## 📝 Licencia
 
-- **Nicole Palomino** - [GitHub](https://github.com/Nicole-Palomino)
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
