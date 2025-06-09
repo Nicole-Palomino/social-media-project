@@ -1,44 +1,44 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+  import { ref, onMounted } from 'vue'
 
-const theme = ref('pink')
-const userData = {
-  username: 'nicolee.palomino',
-  jobTitle: 'Desarrolladora de Software | Ciencia de Datos | Web Scraping | Datos Deportivos',
-  profileImage: 'https://i.postimg.cc/26jJNnbN/my-photo.png'
-}
+  const theme = ref('pink')
+  const userData = {
+    username: 'nicolee.palomino',
+    jobTitle: 'Desarrolladora Web | Ciencia de Datos | Web Scraping | Datos Deportivos',
+    profileImage: 'https://i.postimg.cc/26jJNnbN/my-photo.png'
+  }
 
-const links = [
-  { title: 'Mi Portafolio', url: 'https://nicole-palomino.github.io/portafolio/', icon: '<i class="fa-solid fa-address-card"></i>' },
-  { title: 'Mi Blog', url: 'https://devfut.blogspot.com/', icon: '<i class="fa-brands fa-blogger"></i>' },
-  { title: 'Descarga Mi CV', url: 'https://drive.google.com/uc?export=download&id=1YVJKkCtVtxK1e2yoAv9x_RDIU17KEREi', icon: '<i class="fa-regular fa-file"></i>' }
-]
+  const links = [
+    { title: 'Mi Portafolio', url: 'https://nicole-palomino.github.io/portafolio/', icon: '<i class="fa-solid fa-address-card"></i>' },
+    { title: 'Mi Blog', url: 'https://devfut.blogspot.com/', icon: '<i class="fa-brands fa-blogger"></i>' },
+    { title: 'Descarga Mi CV', url: 'https://drive.google.com/uc?export=download&id=1YVJKkCtVtxK1e2yoAv9x_RDIU17KEREi', icon: '<i class="fa-regular fa-file"></i>' }
+  ]
 
-const socialLinks = [
-  { platform: 'Twitter', url: 'https://x.com/aless_palomino', icon: '<i class="fa-brands fa-x-twitter"></i>' },
-  { platform: 'Instagram', url: 'https://www.instagram.com/nicolee.palomino/', icon: '<i class="fa-brands fa-instagram"></i>' },
-  { platform: 'GitHub', url: 'https://github.com/Nicole-Palomino', icon: '<i class="fa-brands fa-github"></i>' },
-  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/nicole-palomino-alvarado/', icon: '<i class="fa-brands fa-linkedin"></i>' },
-  { platform: 'Tik Tok', url: 'https://www.tiktok.com/@vibe_trivia', icon: '<i class="fa-brands fa-tiktok"></i>' }
-]
+  const socialLinks = [
+    { platform: 'Twitter', url: 'https://x.com/aless_palomino', icon: '<i class="fa-brands fa-x-twitter"></i>' },
+    { platform: 'Instagram', url: 'https://www.instagram.com/nicolee.palomino/', icon: '<i class="fa-brands fa-instagram"></i>' },
+    { platform: 'GitHub', url: 'https://github.com/Nicole-Palomino', icon: '<i class="fa-brands fa-github"></i>' },
+    { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/nicole-palomino-alvarado/', icon: '<i class="fa-brands fa-linkedin"></i>' },
+    { platform: 'Tik Tok', url: 'https://www.tiktok.com/@vibe_trivia', icon: '<i class="fa-brands fa-tiktok"></i>' }
+  ]
 
-const themes = ['pink', 'blue', 'green', 'orange', 'dark']
+  const themes = ['pink', 'blue', 'green', 'orange', 'dark']
 
-const emit = defineEmits(['themeChange'])
+  const emit = defineEmits(['themeChange'])
 
-const changeTheme = (newTheme) => {
-  theme.value = newTheme
-  emit('themeChange', newTheme)
-}
+  const changeTheme = (newTheme) => {
+    theme.value = newTheme
+    emit('themeChange', newTheme)
+  }
 
-const isVisible = ref(false)
-// const isVisible = ref(false)
+  const isVisible = ref(false)
+  // const isVisible = ref(false)
 
-onMounted(() => {
-  setTimeout(() => {
-    isVisible.value = true
-  }, 300)
-})
+  onMounted(() => {
+    setTimeout(() => {
+      isVisible.value = true
+    }, 300)
+  })
 </script>
 
 <template>
